@@ -72,6 +72,13 @@ body {
         color: #bdb8d7;
         display: block;
     }
+    .active {
+        font-family:'Droid Sans', serif;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        line-height: 50px;
+    }
 
     .wrapper .sidebar ul li a .fas {
         width: 25px;
@@ -139,11 +146,6 @@ body {
     margin-bottom: 20px;
 }
 
-#active{
-	color: white;
-	background-color: rgba(100,100,100,1);
-	border-left: thick solid rgba(0,255,0,0.5);
-}
 
 
 .info {
