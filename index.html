@@ -2,109 +2,457 @@
 <html class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.css">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <!-- Animate Css -->
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <!-- Icon Font css -->
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.css">
+  <link rel="stylesheet" href="vendors/fonts/Pe-icon-7-stroke.css">
+  <!-- Themify icon Css -->
+  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendors/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/themify/css/themify-icons.css">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="vendors/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="vendors/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+  <!-- LOADER TEMPLATE -->
+  <!-- <div id="page-loader">
+  <div class="loader-icon fa fa-spin colored-border"></div>
+</div> -->
+  <!-- /LOADER TEMPLATE -->
 
-<!-- MBI Staffing Navbar -->
-<div class="example3">
-    <nav class="navbar navbar-primary navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://mbistaffing.com"><img src="https://mbistaffing.com/mbi-staffing_c_scale,w_440.png" alt="Dispute Bills">
-          </a>
+  <div class="top-bar bg-dark " id="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="top-bar-left text-white">
+            <i class="fa fa-map-marker"></i>
+            <span class="ml-2">2031 Case Parkway South Twinsburg, OH 44087</span>
+          </div>
         </div>
-        <div id="navbar3" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-bar d-none d-md-block d-lg-block bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="logo d-none d-lg-block">
+            <!-- Brand -->
+            <a class="navbar-brand js-scroll-trigger" href="index.html">
+              <img src="img/HanaLogo.png" alt="" style="height: 70px; width: 150px;">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-8 justify-content-end ml-lg-auto d-flex col-12 col-md-12 justify-content-md-center">
+          <div class="top-info-block d-inline-flex">
+            <div class="icon-block">
+              <i class="ti-mobile"></i>
+            </div>
+            <div class="info-block">
+              <h5 class="font-weight-500">+3304054600</h5>
+              <p>Call Us</p>
+            </div>
+          </div>
+
+          <div class="top-info-block d-inline-flex">
+            <div class="icon-block">
+              <i class="ti-email"></i>
+            </div>
+            <div class="info-block">
+              <h5 class="font-weight-500">info@hanaoh.com</h5>
+              <p>Email Us</p>
+            </div>
+          </div>
+          <div class="top-info-block d-inline-flex">
+            <div class="icon-block">
+              <i class="ti-time"></i>
+            </div>
+            <div class="info-block">
+              <h5 class="font-weight-500">Mon-Fri 9:00-5.00 </h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR
+  ================================================= -->
+  <div class="main-navigation" id="mainmenu-area">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary main-nav navbar-togglable rounded-radius">
+
+        <a class="navbar-brand d-lg-none d-block" href="">
+          <h4>Hana</h4>
+        </a>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Links -->
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a href="index.html" class="nav-link js-scroll-trigger">
+                Home
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="#about" class="nav-link js-scroll-trigger">
+                About
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="#featured-services" class="nav-link js-scroll-trigger">
+                Services
+              </a>
+            </li>
+
+
+            <li class="nav-item ">
+              <a href="#contact" class="nav-link js-scroll-trigger">
+                Contact
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a href="careers.html" class="nav-link">
+                Careers
+              </a>
             </li>
           </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
-      <!--/.container-fluid -->
-    </nav>
+
+          <ul class="ml-lg-auto list-unstyled m-0">
+            <li><a href="#" class="btn btn-white btn-circled">Contact Us</a></li>
+          </ul>
+        </div> <!-- / .navbar-collapse -->
+      </nav>
+    </div> <!-- / .container -->
   </div>
 
 
-    <div class="serveHero">
-        <div class="container" >
-            <div class="row align-self-center" >
-                <div class="col-md-10" class="width">
-                    <h1>Hana Technologies, Inc.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci purus, sodales in
-                        est quis, blandit sollicitudin est.Lorem ipsum dolor sit amet</p>
-                    <button class="site-btn">Contact Us</button>
-                    
-                </div>
-            </div>
+
+  <!-- HERO
+  ================================================== -->
+  <section class="banner-area py-7">
+    <!-- Content -->
+    <div class="container">
+      <div class="row  align-items-center">
+        <div class="col-md-12 col-lg-7 text-center text-lg-left">
+          <div class="main-banner">
+            <!-- Heading -->
+            <h1 class="display-4 mb-4 font-weight-normal">
+              World Class Manufacturing
+            </h1>
+
+            <!-- Subheading -->
+            <p class="lead mb-4">
+              State-of-the-art manufacturing facilities combined with the most skilled engineers in the industry working
+              together to meet your business needs
+            </p>
+
+            <!-- Button -->
+            <p class="mb-0">
+              <a href="#" target="_blank" class="btn btn-primary btn-circled">
+                Contact Us
+              </a>
+            </p>
+          </div>
         </div>
+
+
+      </div> <!-- / .row -->
+    </div> <!-- / .container -->
+  </section>
+  <section id="featured-services" class="featured-services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="icofont-bar-code"></i></div>
+            <h4 class="title"><a href="">RFID Manufacturing</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="icofont-racings-wheel"></i></div>
+            <h4 class="title"><a href="">Tire Tags</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="icofont-micro-chip"></i></div>
+            <h4 class="title"><a href="">Microdisplay</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="icofont-network-tower"></i></div>
+            <h4 class="title"><a href="">More</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="text-center">
+        <h3>Have a business inquiry? Contact Us!</h3>
+        <p>Do you have a design or a concept? No matter what your business need is, there is a chance we are capable of manufacturing it. 
+        </p>
+        <a class="cta-btn scrollto" href="#appointment">Contact Us Now!</a>
+      </div>
+
+    </div>
+  </section><!-- End Cta Section -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+          in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="img/main.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p class="font-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+          </p>
+          <ul>
+            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+            <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+            </li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
     </div>
 
+    <div>
+      <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24686.261956018418!2d-81.45745941962392!3d41.28848600679379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88311f5c1b5a0029%3A0xdf02aaea3564ca30!2s2061%20Case%20Pkwy%20S%2C%20Twinsburg%2C%20OH%2044087!5e0!3m2!1sen!2sus!4v1600890463894!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+
+      <div class="row mt-5">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="info-box">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>2061 Case Parkway South Twinsburg, OH 44087</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@hanaoh.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box mt-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+1 330 405 4600</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+   <!-- Footer -->
+   <footer class="page-footer footer font-small indigo" id="footer">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#about">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#featured-services">Services</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#contact">Contact</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="index.html">Back to Top</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="careers.html">Careers</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
     
 
 
-    <div class="tabSect">
 
-        <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-        <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+      </div>
+      <!-- Grid row-->
 
-        <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>Home is where the heart is..</p>
-        </div>
-
-        <div id="News" class="tabcontent">
-            <h3>News</h3>
-            <p>Some news this fine day!</p>
-        </div>
-
-        <div id="Contact" class="tabcontent">
-            <h3>Contact</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
-        </div>
-
-        <div id="About" class="tabcontent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
-        </div>
     </div>
+    <!-- Footer Links -->
 
-    <script src="main.js"></script>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index.html">Hana Technologies, Inc.</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- Main jQuery -->
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 3.1 -->
+  <script src="vendors/bootstrap/js/popper.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="vendors/slick-carousel/slick/slick.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
