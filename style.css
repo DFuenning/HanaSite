@@ -186,6 +186,21 @@ img {
     border-radius: 75px;
 }
 
+.serv-btn {
+    background: #005ca8;
+    border-radius: 1000px;
+    padding: 20px 45px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+
+.serv-btn:hover {
+    background: #c5ebec;
+    color: #005ca8;
+   
+}
+
 .bg-primary,
 .btn-primary,
 .btn-white:hover {
@@ -423,10 +438,19 @@ a:focus {
             rgba(44, 44, 44, 0.85)), url("img/hero.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 75vh;
-
+    height: 70vh;
+   
 }
 
+.banner-area .row{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.main-banner {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .main-banner h5 {
     margin-bottom: 20px;
@@ -518,6 +542,11 @@ a:focus {
 
 .featured-services .icon-box:hover .icon i {
     color: #fff;
+}
+
+#servBtn {
+    padding-top: 35px;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -765,7 +794,7 @@ section {
 /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
-  #footer {
+#footer {
     color: #444444;
     font-size: 14px;
     background: #f1f0f2;
@@ -781,9 +810,9 @@ section {
 
 .img-icon-block {
     position: relative;
-  }
-  
-  .img-icon-block:before {
+}
+
+.img--icon-block:before {
     position: absolute;
     content: "";
     top: -27px;
@@ -794,12 +823,31 @@ section {
     height: 80px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  .img-icon-block i {
+}
+
+.img-icon-block i {
     font-size: 58px;
     z-index: 2 !important;
     color: #333;
     position: relative;
-  }
-  
+}
+
+
+#careerImg img {
+    border-radius: 25px;
+}
+
+
+/* JOB BOARD SECTION */
+
+#careersCard h3 {
+    padding-left: 35px;
+}
+
+.jobBoard h2 {
+    text-align: center;
+}
+
+#appInfo p {
+    text-align: center;
+}
