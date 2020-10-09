@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900");
+/* @import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap');
+ */
 
 html {
-    font-family: sans-serif;
+    font-family: 'IBM Plex Serif', serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    font-family: "Muli", sans-serif;
+    font-family: 'IBM Plex Serif', serif;
     font-size: 15px;
     line-height: 1.75;
     margin: 0;
@@ -344,6 +346,10 @@ a:focus {
     text-transform: uppercase;
 }
 
+.nav-item a {
+    color: #fff !important;
+}
+
 .rounded-radius {
     border-radius: 5px;
 }
@@ -649,6 +655,20 @@ section {
     bottom: 0;
     left: calc(50% - 25px);
 }
+
+
+.title-banner h1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #005ca8;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+
 
 .section-title p {
     margin-bottom: 0;
